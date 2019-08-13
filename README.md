@@ -10,7 +10,7 @@ Reproducer for restreasy issue 2085
 ---
 
 ```bash
-export MAVEN_OPTS='-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005'
+$ export MAVEN_OPTS='-Xdebug -Xnoagent -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=5005'
 ```
 
 ```bash
@@ -30,3 +30,5 @@ $ http http://localhost:9090/app/simple/date
 ```bash
 $ mvn install -DdownloadSources=true -DdownloadJavadocs=true
 ```
+
+∎
